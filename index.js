@@ -1,6 +1,6 @@
 
 //saludos de bienvenida
-let nombreUsuario = prompt("Bienvenido a Compumundo Hipermegared, cual es tu nombre?")
+let nombreUsuario = prompt("Bienvenido a The Best Hard, cual es tu nombre?")
 if (nombreUsuario =="") {
     alert ("No ingresaste un nombre!")
 }  else if (nombreUsuario ==" "){
@@ -90,8 +90,101 @@ for(let i=12; i >=1; i = i-1){
 console.log(nombreUsuario+" "+"Muchas gracias!!!")
 
 
+//Objetos
 
+class Combo{
+    constructor(modelo, micro, memoria, almacenamiento, video, kit, precio){
+        this.modelo=modelo
+        this.micro=micro
+        this.memoria=memoria
+        this.almacenamiento=almacenamiento
+        this.video=video
+        this.kit=kit
+        this.precio=precio
+    }
+    mostrarModelo(){
+        console.log("El modelo seleccionado es: "+ this.modelo)
+    }
+}
 
+const compu1 = new Combo(
+    "CompuE1",
+    "Ryzen 3 3200G",
+    "8 GB",
+    "240 GB",
+    "On Board",
+    "Si",
+    "$125000"
+)
 
+const compu2 = new Combo(
+    "CompuE2",
+    "Ryzen 5 3600G",
+    "8 GB",
+    "580 GB",
+    "On Board",
+    "Si",
+    "$145000"
+)
 
+const compu3 = new Combo(
+    "CompuT1",
+    "i3 10100",
+    "8 GB",
+    "240 GB",
+    "On Board",
+    "Si",
+    "$135000"
+)
+
+const compu4 = new Combo(
+    "CompuT2",
+    "i5 10400",
+    "8 GB",
+    "580 GB",
+    "On Board",
+    "Si",
+    "$150000"
+)
+
+const compu5 = new Combo(
+    "CompuJ1",
+    "Ryzen 5 5600G",
+    "16 GB",
+    "580 GB",
+    "On Board",
+    "Si",
+    "$175000"
+)
+
+const compu6 = new Combo(
+    "CompuJ2",
+    "Ryzen 7 5700G",
+    "16 GB",
+    "720 GB",
+    "RTX 3060 TI",
+    "Si",
+    "$250000"
+)
+
+console.log(compu1, compu2, compu3, compu4, compu5, compu6)
+compu3.mostrarModelo()
+
+//array
+
+const arrayCompu = [
+    compu1, 
+    compu2,
+    compu3,
+    compu4,
+    compu5,
+    compu6,
+]
+
+console.log(arrayCompu)
+
+for ( const i of arrayCompu){
+    console.log(i.modelo)
+    console.log(i.micro)
+}
 

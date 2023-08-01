@@ -1,5 +1,35 @@
 h1 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: solid 2px red;
 }
+
+.title {
+color:brown;
+text-align: center;
+}
+
+.cards__body img{
+ width: 350px;
+ height: 320px;
+ border-radius: 10px;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+  }
+  .cards__body {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    width: 45%;
+    background-color: cadetblue;
+  }

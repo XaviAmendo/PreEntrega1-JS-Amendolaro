@@ -1,26 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link al css-->
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>JavaScript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link al css-->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!--link bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>JavaScript</title>
 </head>
+
 <body>
-    <header>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    </header>
-    <main>
-        <h1>Comision 55290 - JavaScript - Primer Pre-entrega</h1>
-        <h2>Alumno: Xavier Amendolaro</h2>
-        <h3>TP nº1: proceso de seleccion de una pc</h3>
+  <main>
+    <h1>The best Hard</h1>
+    <p class="title">Lo mejor para tu PC</p>
 
-    </main>
-    <footer>
+    <section class="body">
+      <div class="cards__body">
+        <img src="./img/kit-de-actualizacion-gamer-asus-amd-ryzen-3-3200g-b350-8gb-.jpg" alt="">
+        <div class="cards__texto">
+          <h3>CompuE1</h3>
+          <p>AMD Ryzen 3 3200G, 8 gb ddr4, SSD de 240 gb con video integrado y kit de gabinete, teclado, parlantes y
+            mouse.
+          </p>
+        </div>
+      </div>
+      <div class="cards__body">
+        <img src="./img/combo-amd-ryzen-5-3600x-b450-8gb-0.jpg" alt="">
+        <div class="cards__texto">
+          <h3>CompuE2</h3>
+          <p>Ryzen 5 3600G, 8 gb ddr4, SSD de 580gb con video integrado y kit de gabinete, teclado, parlantes y mouse.</p>
+        </div>
+      </div>
+      <div class="cards__body">
+        <img src="./img/i31100.jpg" alt="">
+        <div class="cards__texto">
+          <h3>CompuT1</h3>
+          <p>micro INTEL i3 10100, 8 gb ddr4, SSD de 240 gb con video integrado y kit de gabinete, teclado, parlantes y mouse.</p>
+        </div>
+      </div>
+      <div class="cards__body">
+        <img src="./img/i510400.jpg" alt="">
+        <div class="cards__texto">
+          <h3>CompuT2</h3>
+          <p>INTEL i5 10400, 8 gb ddr4, SSD de 580gb con video integrado y kit de gabinete, teclado, parlantes y mouse.</p>
+        </div>
+      </div>
+      <div class="cards__body">
+        <img src="./img/5600g.jpg" alt="">
+        <div class="cards__texto">
+          <h3>CompuJ1</h3>
+          <p>micro ryzen 5 5600G, 16 gb ddr4, SSD 580 gb con video integrado con un kit que te incluye gabinete, teclado, parlantes y mouse.</p>
+        </div>
+      </div>
+      <div class="cards__body">
+        <img src="./img/75400.jpg" alt="">
+        <div class="cards__texto">
+          <h3>CompuJ2</h3>
+          <p>ryzen 7 5700G, con 16 gb ddr 4, SSD 720 gb y con una RTX 3060 TI con un gabinete gamer junto a un teclado, mouse gamer y parlante potenciados.</p>
+        </div>
+      </div>
+    </section>
 
-    </footer>
+  </main>
 
-    <script src="./index.js"></script>
+  <footer>
+
+  </footer>
+
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
